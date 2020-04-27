@@ -1,0 +1,16 @@
+@charset "UTF-8";
+html, body {margin: 0; padding: 0;}
+button:focus {outline: none;}
+h1.header {text-align: center;}
+div.buttons, div.contents {width: 80%; margin: 0 10%;}
+div.buttons:after {display: table; content: ""; clear: both;}
+div.buttons button {float: right; border: 0; background-color: #376bc1; color: #ffffff; padding: 5px 15px; cursor: pointer;}
+div.buttons button:hover {background-color: black; font-weight: bold;}
+
+h2.title, div.content, div.contents textarea {width: calc(100% - 20px); padding: 10px;}
+h2.title {margin: 0;}
+div.contents input {box-sizing: border-box; width: 100%; padding: 10px; margin-bottom: 10px;}
+div.content, div.contents textarea {min-height: calc(30vh - 20px); margin-bottom: 15px; background-color: #cff54e;}
+div.contents textarea {resize: none; border: 0; font-size: 1.3rem; color: #349aa3;}
+div.contents textarea:focus {outline: none;}
+.disNone {display: none;}

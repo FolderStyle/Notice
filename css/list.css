@@ -1,0 +1,16 @@
+@charset "UTF-8";
+html, body {margin: 0; padding: 0;}
+button:focus {outline: none;}
+h1.header {text-align: center;}
+div.buttons, li.row {width: 80%; margin: 0 10%;}
+div.buttons:after, li.row:after {display: table; content: ""; clear: both;}
+div.buttons button {float: right; border: 0; background-color: #376bc1; color: #ffffff; padding: 5px 15px; cursor: pointer;}
+div.buttons button:hover {background-color: black; font-weight: bold;}
+ul.body {list-style-type: none; padding-left: 0; margin: 20px 0;}
+li.row {padding: 15px 0; cursor: pointer; border-bottom: 1px solid black; box-sizing: border-box;}
+li.row:hover {background-color: #c5ee80; font-weight: bold;}
+li.row div {float: left; height: 20px;}
+li.row div.col1 {width: 20%; text-align: center;}
+li.row div.col2 {width: 70%;}
+li.row div.col3 {width: 10%; text-align: center;}
+li.row div.col3 img {height: 100%;}

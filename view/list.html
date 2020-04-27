@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="buttons">
+	<button type="button" data-ng-click="remove()" data-ng-hide="resourceList.length == 0">전체삭제</button>
+	<button type="button" data-ng-click="write()">작성하기</button>
+</div>
+<ul class="body">
+	<li class="row" data-ng-repeat="row in resourceList" data-ng-click="li_event(row)">
+		<div class="col1">{{row.num}}</div>
+		<div class="col2">{{row.title}}</div>
+		<div class="col3">
+			<img src="img/delete.svg" data-ng-show="row.del">
+		</div>
+	</li>
+</ul>
+</body>
+</html>

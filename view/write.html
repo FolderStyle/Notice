@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="contents">
+	<form action="" method="get">
+		<input type="text" name="title" id="title" placeholder="제목을 입력하세요." data-ng-model="data.title">
+		<textarea rows="5" cols="5" name="content" id="content" placeholder="내용을 입력하세요." data-ng-model="data.content"></textarea>
+	</form>
+</div>
+<div class="buttons">
+	<button type="button" data-ng-click="cancel()">취소</button>
+	<button type="button" data-ng-click="save()">작성</button>
+</div>
+</body>
+</html>

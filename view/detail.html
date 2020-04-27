@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="contents">
+	<h2 class="title">{{data.title}}</h2>
+	<div class="content" data-ng-show="state">{{data.content}}</div>
+	<form data-ng-hide="state">
+		<input type="hidden" name="num" data-ng-model="data.num">
+		<textarea rows="5" cols="5" name="content" data-ng-model="data.content"></textarea>
+	</form>
+</div>
+<div class="buttons" data-ng-hide="state">
+	<button type="button" data-ng-click="cancel()">취소</button>
+	<button type="button" data-ng-click="save()">적용</button>
+</div>
+<div class="buttons" data-ng-show="state">
+	<button type="button" data-ng-click="back()">돌아가기</button>
+	<button type="button" data-ng-click="del()">삭제하기</button>
+	<button type="button" data-ng-click="cancel()">수정하기</button>
+</div>
+</body>
+</html>
